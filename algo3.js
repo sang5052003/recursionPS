@@ -35,3 +35,4 @@ function findPath(x, y) {
 }
 
 console.log(findPath(0,0));
+console.log(maze);
