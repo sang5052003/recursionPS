@@ -20,7 +20,7 @@ function findPath(x, y) {
         return false;
     } else if (maze[x][y] !== PATHWAY) { //except visited(green, red), wall(blue)
         return false;
-    } else if (x === n - 1 || y === n - 1) { //exit = 8, 8좌표
+    } else if (x === n - 1 && y === n - 1) { //exit = 8, 8좌표
         maze[x][y] = PATH;
         return true;
     } else {
